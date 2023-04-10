@@ -81,7 +81,7 @@ const handleSubmit = async (e) => {
    loader(messageDiv);
 
    // fetch data from server -> bot response
-  const response = await fetch('http://localhost:5000/',{
+  const response = await fetch('https://maps-ai.onrender.com/',{
     method: 'POST',
     headers: {'Content-Type':'application/json'},
     body: JSON.stringify({prompt: data.get('prompt')})
